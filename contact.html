@@ -6,19 +6,37 @@
     <title>Basic Portfolio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        body {
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUL0ImU8-vS0NnQqlIqu_Po1Tfcyl0Uq0CfcjbSSYF5HZycjJ8);
+        }
+
+        .container {
+            margin-top: 40px;
+            background-color: white;
+            padding-bottom: 20px;
+            margin-bottom: 100px;
+        }
+        button{
+            margin-top: 10px;
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <div>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="index.html">Christian Pak</a>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light " style="padding: 0px">
+                <a class="navbar-brand" href="index.html "
+                    style="background-color:#4aaaa5; color:white; margin-left:150px; padding:20px 40px 20px 40px;">Christian
+                    Pak</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav" style="margin-right: 150px;">
+                    <ul class="navbar-nav justify-content-end">
                         <li class="nav-item active">
                             <a class="nav-link" href="index.html">About Me<span class="sr-only">(current)</span></a>
                         </li>
@@ -33,7 +51,39 @@
             </nav>
         </div>
     </header>
-    
+    <div class="container">
+        <div class="mt-md-1 p-3">
+            <h2 class="mt-2 ml-1" style="color:#4aaaa5">Contact Me</h2>
+        </div>
+        <div class="input-group mb-3 pt-2" style="border-top: 2px solid gray;">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Name</span>
+            </div>
+            <input type="text" class="form-control" placeholder="" aria-label="Username"
+                aria-describedby="basic-addon1">
+        </div>
+
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Recipient's Email" aria-label="Recipient's username"
+                aria-describedby="basic-addon2">
+            <div class="input-group-append">
+                <span class="input-group-text" id="basic-addon2">@example.com</span>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Leave a message!</span>
+            </div>
+            <textarea class="form-control" aria-label="With textarea"></textarea>
+        </div>
+
+        <div class="button">
+                <button type="button" class="btn btn-outline-primary">Send your message</button>
+        </div>
 </body>
+<footer class="fixed-bottom text-center p-3 mt-5" style="border-top: 10px solid #4aaaa5; background-color: #666666;">
+    Copyright ©
+</footer>
 
 </html>
